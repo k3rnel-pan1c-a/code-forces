@@ -1,0 +1,5 @@
+rows = 6
+for i in range(rows + 1):
+    for j in range(i):
+        print("✩" ,end=" ")
+    print()
