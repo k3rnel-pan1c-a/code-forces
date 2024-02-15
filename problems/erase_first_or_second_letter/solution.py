@@ -2,7 +2,7 @@ with open("input.txt", "r") as f:
     lines = f.readlines()
 
 
-def remove_first_second_char(sub_strings: set, string: str):
+def remove_first_second_char(sub_strings: set, string: str): # Recursive function
     if len(string) == 1:
         sub_strings.add(string)
         return
