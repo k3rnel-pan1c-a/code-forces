@@ -7,11 +7,9 @@ for _ in range(num_cases):
         print(0)
         continue
 
-    num_lengths = {int(i): 0 for i in string}
+    num_lengths = {int(i): 0 for i in sorted(list(map(int, string)))}
     for i in range(string_len):
         num_lengths[int(string[i])] += 1
-
-    num_lengths = dict(sorted(num_lengths.items()))
     sum = 0
 
     for length, count in num_lengths.items():
