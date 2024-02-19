@@ -17,9 +17,9 @@ for _ in range(num_cases):
 
         if abs(a_max - c_min) > abs(c_max - a_min):
             total_diff += abs(a_max - c_min)
-            array_c.pop()
-            array_a.pop()
-        else:
+            array_c.pop(0)
+            array_a.pop(0)
+        elif abs(a_max - c_min) <= abs(c_max - a_min):
             total_diff += abs(c_max - a_min)
             array_c.pop(-1)
             array_a.pop(-1)
